@@ -1,0 +1,138 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+html, body {
+    background-color: #141414;
+}
+
+.main-container{
+    position: relative;
+}
+
+.topbar{
+    position: sticky;
+    top: 0;
+    height: 6vh;
+    background-color: transparent;
+    z-index: 2;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.topbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.topbar > ul > li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+.topbar > ul > li:hover {
+    cursor: pointer;
+}
+
+.topbar-menu-logo{
+    height: 50px;
+}
+
+.preview-container{
+    position: relative;
+    margin-top: -6vh;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.preview-content-interactions{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+}
+
+.preview-title{
+    width: 100%;
+    font-size: 3rem;
+    margin-left: 3vw;
+    font-weight: bold;
+}
+
+.preview-description{
+    font-size: 1.20rem;
+    width: 45%;
+    margin-top: 1rem;
+    margin-left: 3vw;
+}
+
+.preview-media{
+    width: 100vw;
+    overflow: hidden;
+}
+
+.preview-buttons{
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 3vw;
+}
+
+.preview-button{
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ffff;
+    border: none;
+    color: black;
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+
+.info{
+    background-color: rgba(109,109,110,0.7) !important;
+    color: white;
+}
+
+.content-categories{
+    position: relative;
+    z-index: 1;
+    padding-left: 3vw;
+}
+
+.content-category{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.content-list {
+    overflow: hidden;
+    display: flex;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.content-list > li {
+    display: inline-flex;
+    height: 180px;
+}
+
+.content-list > li:hover {
+    cursor: pointer;
+}
+
+.content-list > li > img {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 1rem;
+    width: 300px;
+    height: auto;
+    max-height: 500px;
+    max-width: 500px;
+}
